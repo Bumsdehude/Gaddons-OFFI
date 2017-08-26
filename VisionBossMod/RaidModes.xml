@@ -1,0 +1,15 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+	<Script file="RaidModes.lua"/>
+	
+	<!-- Frame to handle all core events --> 
+   <Frame name="VBMRaidModesFrame"> 
+      <Scripts> 
+         <OnLoad>
+            VBM_RaidModes_OnLoad();
+         </OnLoad>
+         <OnEvent>
+            VBM_RaidModes_OnEvent(event);
+         </OnEvent> 
+      </Scripts> 
+   </Frame>
+</Ui>
